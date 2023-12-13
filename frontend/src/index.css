@@ -31,6 +31,9 @@ body {
 li{
   cursor: pointer;
 }
+span{
+  white-space: nowrap;
+}
 /* ******* */
 
 .nav-bar {

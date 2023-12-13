@@ -52,15 +52,15 @@ function WatchedSummary({ watched }) {
         </p>
         <p>
           <span>⭐️</span>
-          <span>{avgImdbRating.toFixed(2)}</span>
+          <span>{avgImdbRating.toFixed(1)}</span>
         </p>
         <p>
           <span>🌟</span>
-          <span>{avgUserRating.toFixed(2)}</span>
+          <span>{avgUserRating.toFixed(1)}</span>
         </p>
         <p>
           <span>⏳</span>
-          <span>{avgRuntime} min</span>
+          <span>{avgRuntime.toFixed(1)} min</span>
         </p>
       </div>
     </div>
@@ -100,7 +100,9 @@ function WatchedMovie({ movie, onDeleteMovie }) {
         <button
           className="btn-delete"
           onClick={() => onDeleteMovie(movie.imdbID)}
-        >X</button>
+        >
+          X
+        </button>
       </div>
     </li>
   );
